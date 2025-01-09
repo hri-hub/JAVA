@@ -1,0 +1,30 @@
+1. JAVA BASICS PORTAL 
+
+1) USING SCANNER CLASS
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // Scanner - class , sc-obj of the class
+        // In the obj sc of the class Scanner, it is said to take input from  the user using Scanner(system.in)
+        
+        // Read inputs
+        int i = sc.nextInt();  // Integer
+        double d = sc.nextDouble();  // Double
+        boolean b = sc.nextBoolean();  // Boolean
+        char c = sc.next().charAt(0);  // Character
+        sc.nextLine();  // Consume the leftover newline
+        String s = sc.nextLine();  // String
+        
+        // Display the values
+        System.out.println("Integer value = " + i);
+        System.out.println("Double value = " + d);
+        System.out.println("Boolean value = " + b);
+        System.out.println("char value = " + c);
+        System.out.println("String value = " + s);
+        
+        sc.close();
+        \\In big projects not closing class , here sc class leads to memory leakage
+    }
+}
